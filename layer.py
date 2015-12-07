@@ -34,7 +34,7 @@ class EchoLayer(YowInterfaceLayer):
                                               "units=metric") % (lat, lon))
                     respuesta = str(respuesta.json()["main"]["temp"])
 
-                    outgoingMessageProtocolEntity = TextMessageProtocolEntity("Hay "+respuesta+" donde te encuentras" ,
+                    outgoingMessageProtocolEntity = TextMessageProtocolEntity("Hay "+respuesta+"ºC donde te encuentras" ,
                                                                               to = messageProtocolEntity.getFrom())
                     self.toLower(receipt)
                     self.toLower(outgoingMessageProtocolEntity)
