@@ -22,7 +22,7 @@ CREDENTIALS = (config.numero, config.password)
 if __name__ == "__main__":
     layers = (
             EchoLayer,
-            (YowAuthenticationProtocolLayer, YowMessagesProtocolLayer, YowReceiptProtocolLayer, YowAckProtocolLayer),#, YowMediaProtocolLayer),
+            (YowAuthenticationProtocolLayer, YowMessagesProtocolLayer, YowReceiptProtocolLayer, YowAckProtocolLayer, YowMediaProtocolLayer),
             YowAxolotlLayer,
             YowCoderLayer,
             YowCryptLayer,
