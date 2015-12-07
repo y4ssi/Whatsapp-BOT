@@ -20,6 +20,9 @@ En general el Robot tiene el siguiente funcionamiento:
 !USD valor => Convierte el valor dolar a pesos chilenos (CLP) (Ej. !USD 1)
 !UF valor => Convierte el valor UF a pesos chilenos (CLP) (Ej. !UF 1
 ```
+#Clima
+
+Si se envía la posición de GPS responde con la temperatura actual del lugar según la geolocalizacion
 
 #Deploy
 
