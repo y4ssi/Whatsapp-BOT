@@ -19,7 +19,8 @@ En general el Robot tiene el siguiente funcionamiento:
 !version => Muestra la version
 !USD valor => Convierte el valor dolar a pesos chilenos (CLP) (Ej. !USD 1)
 !UF valor => Convierte el valor UF a pesos chilenos (CLP) (Ej. !UF 1
-!chiste = > Recibe un chiste random
+!chiste => Recibe un chiste random
+!help => Todos los comandos
 ```
 ##Clima
 
