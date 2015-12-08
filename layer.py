@@ -91,6 +91,11 @@ class EchoLayer(YowInterfaceLayer):
                     resultado = re.findall('<span class=bld>(.*?)</span>',
                                            respuesta.text, re.DOTALL)
                     respuesta = resultado[0]
+                # Chiste
+                elif mensaje == "!chiste":
+                    respuesta = requests.get("http://www.chistescortos.eu/random")
+                    respuesta = str(re.findall(('class="oldlink">(.*?)</a>'), respuesta.text, re.DOTALL)[0].replace("<br />", "\n").strip('\n'))
+                    respuesta = unicode(respuesta)
                 # Respuesta Genérica
                 else:
                     respuesta = "Podrias expresarte mejor"
