@@ -96,6 +96,17 @@ class EchoLayer(YowInterfaceLayer):
                     respuesta = requests.get("http://www.chistescortos.eu/random")
                     respuesta = str(re.findall(('class="oldlink">(.*?)</a>'), respuesta.text, re.DOTALL)[0].replace("<br />", "\n").strip('\n'))
                     respuesta = unicode(respuesta)
+                # Help
+                elif mensaje == "!help":
+                    respuesta = ('\n'
+                                 '!bip numero_tarjeta => Consulta el saldo de una tarjeta !Bip\n'
+                                 '\n!sismo => Consulta los ultimos 8 sismo de Chile\n'
+                                 '\n!hora => Hora actual en Chile\n'
+                                 '\n!version => Muestra la version\n'
+                                 '\n!USD valor => Convierte el valor dolar a pesos chilenos (CLP) (Ej. !USD 1)\n'
+                                 '\n!UF valor => Convierte el valor UF a pesos chilenos (CLP) (Ej. !UF 1\n'
+                                 '\n!chiste => Recibe un chiste random\n'
+                                 'Si se envía la posición de GPS responde con la temperatura actual del lugar según la geolocalizacion')
                 # Respuesta Genérica
                 else:
                     respuesta = "Podrias expresarte mejor"
